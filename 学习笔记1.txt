@@ -1,1 +1,9 @@
-q
+1:引入 gorm (数据库连接管理包)
+http://pkg.go.dev/(go包官网) 搜索 gorm
+
+type UserBasic struct{
+    gorm.Model
+    Name string `gorm:"colnmn: name_1" json:"name_2"` //这后面是一种注释写法，表示 gorm 使用 name_1  json 使用 name_2 
+    }
+
+2:引入 gin 框架
